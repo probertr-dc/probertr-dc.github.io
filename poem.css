@@ -4,5 +4,5 @@ h1{
 .poem{
   color: rgb(0,0,0);
   font-family: "Times New Roman", "Calibri", serif;
-  text-align: center;
+  margin-left: 50%;
 }
