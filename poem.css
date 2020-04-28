@@ -1,8 +1,21 @@
 h1{
-  color: rgb(0,255,0);
+  color: rgb(0,0,0);
+  text-align: center;
   }
 .poem{
   color: rgb(0,0,0);
   font-family: "Times New Roman", "Calibri", serif;
-  margin-left: 40%;
+  margin-left: 15%
+}
+.author{
+  color: rgb(0,0,0);
+  font-family: "Times New Roman", "Calibri", serif;
+  margin-left: 60%;
+  font-size: 12px;
+  font-style: italic;
+}
+body{
+  width: 30%;
+  margin: 20px auto;
+  border: 25px solid rgb(143,143,143);
 }
