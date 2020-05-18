@@ -6,19 +6,19 @@ function checkAnswers() {
     }
     else
         q1Res.textContent = "Incorrect";
-    if (q2.value.toLowerCase() == "public") {
+    if (q2.value == "public") {
         x++;
         q2Res.textContent = "Correct";
     }
     else
         q2Res.textContent = "Incorrect";
-    if (q3.value.toLowerCase() == "false") {
+    if (q3Ans.checked) {
         x++;
         q3Res.textContent = "Correct";
     }
     else
         q3Res.textContent = "Incorrect";
-    if (q4.value.toLowerCase() == "stack") {
+    if (q4.value == "stack") {
         x++;
         q4Res.textContent = "Correct";
     }
@@ -42,7 +42,7 @@ function checkAnswers() {
     }
     else
         q7Res.textContent = "Incorrect";
-    if (q8.value.toLowerCase() == "2") {
+    if (q8.value == "2") {
         x++;
         q8Res.textContent = "Correct";
     }
@@ -64,6 +64,7 @@ function checkAnswers() {
 }
 function inputFunc() {
     mark.textContent = "Your mark: ?/10";
+    current.textContent = q8.value + "  ";
     q1Res.textContent = "";
     q2Res.textContent = "";
     q3Res.textContent = "";
@@ -77,3 +78,4 @@ function inputFunc() {
 }
 button.onclick = checkAnswers;
 questions.oninput = inputFunc;
+q8.oninput = inputFunc;

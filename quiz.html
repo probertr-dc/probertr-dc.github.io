@@ -10,13 +10,26 @@
            Q1: What does STL (c++) stand for? <input id="q1" /> <span id="q1Res"></span> 
        </label> <br>
        <label>
-           Q2: Which is the most commonly used type of inheritance in c++: public, private or protected? <input id="q2" /> <span id="q2Res"></span>
+           Q2: Which is the most commonly used type of inheritance in c++?
+        <select id="q2">
+            <option value="public">Public</option>
+            <option value="private">Private</option>
+            <option value="protected"></option>
+        </select>
+           <span id="q2Res"></span>
        </label> <br>
+       <p> Q3: All members of a class in c++ are public by default.
+           <label><input type="radio" name="q3" value="true" />True</label>
+           <label><input type="radio" name="q3" id="q3Ans" value="false" />False</label>
+           <span id="q3Res"></span>
+       </p><br>
        <label>
-           Q3: True/False. All members of a 'class' in c++ are public by default. <input id="q3" /><span id="q3Res"></span>
-       </label> <br>
-       <label>
-           Q4: Which memory is faster, stack or heap? <input id="q4" /><span id="q4Res"></span>
+           Q4: Which memory is usually faster, stack or heap? 
+        <select id="q4">
+            <option value="stack">Stack</option>
+            <option value="heap">Heap</option>
+        </select>
+           <span id="q4Res"></span>
        </label> <br>
        <label>
            Q5: What is the highest number which can be stored by an int (c++)? <input id="q5" /><span id="q5Res"></span>
@@ -28,7 +41,7 @@
            Q7: What is the '\0' character in a c string? <input id="q7" /><span id="q7Res"></span>
        </label> <br>
        <label>
-           Q8: How many bytes is a 'short int'? <input id="q8" /><span id="q8Res"></span>
+           Q8: How many bytes is a 'short int'? <input id="q8" type="range" min="1" max="8" /><span id="current"></span><span id="q8Res"></span>
        </label> <br>
        <label>
            Q9: What does API stand for? <input id="q9" /><span id="q9Res"></span>
