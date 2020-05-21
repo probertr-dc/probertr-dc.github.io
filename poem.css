@@ -14,7 +14,7 @@ h1{
   font-size: 12px;
   font-style: italic;
 }
-body{
+.mainPage{
   width: 30%;
   margin: 20px auto;
   border: 25px solid rgb(143,143,143);

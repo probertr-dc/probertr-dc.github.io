@@ -2,79 +2,88 @@ function checkAnswers() {
     var x = 0;
     if (q1.value.toLowerCase() == "standard template library") {
         x++;
-        q1Res.textContent = "Correct";
+        q1.classList.add("correct");
     }
     else
-        q1Res.textContent = "Incorrect";
+        q1.classList.add("incorrect");
     if (q2.value == "public") {
         x++;
-        q2Res.textContent = "Correct";
+        q2.classList.add("correct");
     }
     else
-        q2Res.textContent = "Incorrect";
+        q2.classList.add("incorrect");
     if (q3Ans.checked) {
         x++;
-        q3Res.textContent = "Correct";
+        q3Ans.classList.add("correct");
     }
     else
-        q3Res.textContent = "Incorrect";
+        q3Wrong.classList.add("incorrect");
     if (q4.value == "stack") {
         x++;
-        q4Res.textContent = "Correct";
+        q4.classList.add("correct");
     }
     else
-        q4Res.textContent = "Incorrect";
-    if (q5.value.toLowerCase() == "2147483647") {
+        q4.classList.add("incorrect");
+    if (q5.value.toLowerCase() == "application programming interface") {
         x++;
-        q5Res.textContent = "Correct";
+        q5.classList.add("correct");
     }
     else
-        q5Res.textContent = "Incorrect";
+        q5.classList.add("incorrect");
     if (q6.value.toLowerCase() == "return type") {
         x++;
-        q6Res.textContent = "Correct";
+        q6.classList.add("correct");
     }
     else
-        q6Res.textContent = "Incorrect";
+        q6.classList.add("incorrect");
     if (q7.value.toLowerCase() == "null terminator") {
         x++;
-        q7Res.textContent = "Correct";
+        q7.classList.add("correct");
     }
     else
-        q7Res.textContent = "Incorrect";
+        q7.classList.add("incorrect");
     if (q8.value == "2") {
         x++;
-        q8Res.textContent = "Correct";
+        q8.classList.add("correct");
     }
     else
-        q8Res.textContent = "Incorrect";
-    if (q9.value.toLowerCase() == "application programming interface") {
+        q8.classList.add("incorrect");
+    if (q9.value == "2^31 - 1") {
         x++;
-        q9Res.textContent = "Correct";
+        q9.classList.add("correct");
     }
     else
-        q9Res.textContent = "Incorrect";
+        q9.classList.add("incorrect");
     if (q10.value.toLowerCase() == "std::ostream") {
         x++;
-        q10Res.textContent = "Correct";
+        q10.classList.add("correct");
     }
     else
-        q10Res.textContent = "Incorrect";
+        q10.classList.add("incorrect");
     mark.textContent = "Your mark: " + x + "/10";
 }
 function inputFunc() {
     mark.textContent = "Your mark: ?/10";
-    current.textContent = q8.value + "  ";
-    q1Res.textContent = "";
-    q2Res.textContent = "";
-    q3Res.textContent = "";
-    q4Res.textContent = "";
-    q5Res.textContent = "";
-    q6Res.textContent = "";
-    q7Res.textContent = "";
-    q8Res.textContent = "";
-    q9Res.textContent = "";
-    q10Res.textContent = "";
+    q1.classList.remove("correct");
+    q1.classList.remove("incorrect");
+    q2.classList.remove("correct");
+    q2.classList.remove("incorrect");
+    q3Ans.classList.remove("correct");
+    q3Wrong.classList.remove("incorrect");
+    q4.classList.remove("correct");
+    q4.classList.remove("incorrect");
+    q5.classList.remove("correct");
+    q5.classList.remove("incorrect");
+    q6.classList.remove("correct");
+    q6.classList.remove("incorrect");
+    q7.classList.remove("correct");
+    q7.classList.remove("incorrect");
+    q8.classList.remove("correct");
+    q8.classList.remove("incorrect");
+    q9.classList.remove("correct");
+    q9.classList.remove("incorrect");
+    q10.classList.remove("correct");
+    q10.classList.remove("incorrect");
 }
 button.onclick = checkAnswers;
 questions.oninput = inputFunc;
